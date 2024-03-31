@@ -1,3 +1,25 @@
+＝＝＝英文版＝＝＝
+# LogViewer
+
+LogViewer is a log viewing system designed specifically for backend engineers. It aims to provide an efficient and user-friendly interface that allows users to easily view and analyze a large amount of log records. The system is developed based on the Vue.js framework and uses Element Plus’s Virtualized Table to display log records, ensuring that the page remains smooth even in the case of large amounts of data.
+
+## 功能特色
+
+- **Virtualized Table Display**：Using Element Plus’s Virtualized Table technology, it supports the efficient display of a large amount of log data, allowing users to quickly browse and locate the required data.
+- **Multi-condition Query**：Provides a convenient search bar, allowing users to perform precise queries based on time, level, source, PID, IP, etc., quickly finding the target log data.
+- **Clickable to Expand Detailed Information**：Fields in the table can be clicked. After clicking, a dialog will pop up to display the detailed information of the log, and it supports the use of vue-json-pretty for the beautiful display of JSON format data.
+
+## 技術堆疊
+
+- *Vue.js: The main front-end framework
+- *Element Plus: Used to display the virtualized table
+- *Axios: Used for data interaction with the backend service
+- *Vue Router: Used to handle routing
+- *Pinia: Vue.js state management library
+- *Vue Axios: A Vue.js plugin that simplifies integration with Axios
+- *Vue JSON Pretty: Used for the beautiful display of JSON format data
+
+＝＝＝中文版＝＝＝
 # LogViewer
 
 LogViewer 是一個專為後端工程師設計的日誌查看系統，旨在提供一個效率高、易於使用的界面，讓使用者能夠輕鬆查看和分析大量的日誌紀錄。該系統基於 Vue.js 框架開發，並使用了 Element Plus 的 Virtualized Table 來展示日誌紀錄，確保即使是大量資料的情況下，頁面仍能保持流暢。

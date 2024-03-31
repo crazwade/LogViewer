@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.el-table-v2__cell-text {
+  padding: 2px 0px;
+  font-size: 12px;
+  line-height: 1;
+}

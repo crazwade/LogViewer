@@ -18,7 +18,7 @@ export default defineConfig(({ mode }) => {
   } = env;
 
   return {
-    base: './',
+    base: '',
     server: {
       host: true,
       proxy: {

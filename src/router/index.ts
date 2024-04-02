@@ -7,15 +7,9 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: RouteName.Base,
-      redirect: { name: RouteName.Main },
-    },
-    // 配合vue-router以及後端，需要有這一層
-    {
-      path: window.PUBLIC_ROUTE_PATH ?? '/public',
       name: RouteName.Main,
       component: Layout,
-      redirect: { name: RouteName.Nlog },
+      redirect: { name: RouteName.Log },
       children: [
         {
           path: 'Home',
@@ -23,8 +17,8 @@ const router = createRouter({
           component: () => import('@/views/Home/Home.vue'),
         },
         {
-          path: 'Nlog',
-          name: RouteName.Nlog,
+          path: 'Log',
+          name: RouteName.Log,
           component: () => import('@/views/NlogViewer/NlogView.vue'),
         },
         {

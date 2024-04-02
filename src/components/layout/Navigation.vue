@@ -6,9 +6,9 @@
     <el-menu-item :index="routeMap[RouteName.Home].path">
       Home
     </el-menu-item>
-    <el-menu-item-group title="Nlog">
+    <el-menu-item-group title="Log">
       <el-menu-item
-        :index="routeMap[RouteName.Nlog].path"
+        :index="routeMap[RouteName.Log].path"
       >
         log歷史資料查詢
       </el-menu-item>

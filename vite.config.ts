@@ -18,7 +18,7 @@ export default defineConfig(({ mode }) => {
   } = env;
 
   return {
-    base: '',
+    base: './',
     server: {
       host: true,
       proxy: {
@@ -61,11 +61,6 @@ export default defineConfig(({ mode }) => {
     },
     build: {
       outDir: 'dist',
-      rollupOptions: {
-        output: {
-          entryFileNames: '[name].[hash].js',
-        },
-      },
     },
   };
 });

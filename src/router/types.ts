@@ -1,8 +1,7 @@
 export enum RouteName {
-  Base = 'Base',
   Main = 'Main',
   Home = 'Home',
-  Nlog = 'Nlog',
+  Log = 'Log',
   StopwatchRealtimeData = 'StopwatchRealtimeData',
   TestPage = 'TestPage',
 }

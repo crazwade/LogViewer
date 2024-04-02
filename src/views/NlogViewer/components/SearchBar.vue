@@ -109,6 +109,10 @@ const reset = () => {
   emit('reset', formData);
 };
 
+onMounted(() => {
+  emit('submit', formData);
+});
+
 </script>
 
 <style lang="scss" scoped>

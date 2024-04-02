@@ -85,10 +85,6 @@ const fetchLogs = async (
   }, 500);
 };
 
-// const handleDialogVisable = () => {
-//   dialogControl.value = !dialogControl.value;
-// };
-
 const reset = (pagesize: number | null = null) => {
   pageSize.value = pagesize ?? Config.defaultPageSize;
   tableDataRef.value = [];
@@ -109,7 +105,6 @@ const handleFormSubmit = (formData: FindLogPayload) => {
 const openDialogHandler = (rowData: FindLogResponse) => {
   dialogData.value = rowData;
   dialogControl.value = true;
-  // handleDialogVisable();
 };
 
 onMounted(() => {

@@ -61,6 +61,11 @@ export default defineConfig(({ mode }) => {
     },
     build: {
       outDir: 'dist',
+      rollupOptions: {
+        output: {
+          entryFileNames: '[name].[hash].js',
+        },
+      },
     },
   };
 });

@@ -15,9 +15,13 @@ const isLoading = ref(false);
 const tableHtml = ref();
 
 async function getData() {
+  isLoading.value = true;
+
   const res = await getReport();
-  console.log(res);
+
   tableHtml.value = res.data;
+
+  isLoading.value = false;
 }
 
 onMounted(() => {
